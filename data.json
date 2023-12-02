@@ -1,0 +1,11 @@
+{
+  "name": "Apple Seed",
+  "id": 1235,
+  "email": "aseed@example.com",
+  "phones": [
+    {
+      "number": "777-4321",
+      "type": 1
+    }
+  ]
+}

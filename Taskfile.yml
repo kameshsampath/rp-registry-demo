@@ -1,0 +1,17 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  SRC_DIR: .
+  DST_DIR: .
+
+tasks:
+  default:
+    cmds:
+      - >
+        protoc --proto_path=protos \
+          --go_out="pkg/addressbook" \
+          --go_opt=paths=source_relative \
+          addressbook.proto
+    silent: false
